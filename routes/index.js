@@ -8,14 +8,14 @@ const messages = [
     text: "Hello there",
     user: "willy",
     date: moment()
-      .startOf('hour' - 1)
+      .startOf('hour')
       .fromNow()
   },
   {
     text: "Message go Brrrrr",
     user: "chad",
     date: moment()
-      .startOf('hour' - 1)
+      .startOf('day')
       .fromNow()
   }
 ];
@@ -41,7 +41,7 @@ router.post('/new', (req, res) => {
     text: req.body.text, 
     user: req.body.author, 
     date: moment()
-        .startOf('second' - 1)
+        .startOf('hour' - 1)
         .fromNow()
   }
 
