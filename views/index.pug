@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  each val in message
+    h3 
+      a From #{val.user}
+    p #{val.text}
+    hr
+  //- endded here
+  form(action='/new' method='post')
+    h1 theForm
+    input(type="text" name="author" placeholder="author")
+    br
+    br
+    input(type="text" name="text" placeholder="text")
+    br
+    br
+    input(type="submit" value="Send")
