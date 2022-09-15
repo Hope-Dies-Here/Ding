@@ -11,7 +11,8 @@ block content
       each val in message
         div(class="message")
           h3 
-            a From #{val.user}
+            a(href = val.id) From #{val.user}
           p #{val.text}
+          a(href = val.id) Delete
           div(id="sp")
             span #{val.date} 
