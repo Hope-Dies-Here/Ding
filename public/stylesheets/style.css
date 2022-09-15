@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family:sans-serif;
+  font-family: 'Sora', sans-serif;
 }
 
 a {
@@ -19,13 +19,15 @@ header {
 } 
 header p{
     margin: 10px 20px;
+    color: rgb(209, 209, 209);
+    font-size: 12px;
 }
 #content{
   /* border: 1px solid red; */
   padding-left: 20px;
 }
 
-header h1, header p{
+header h1{
   color: white;
 }
 #send{
@@ -100,12 +102,14 @@ form input{
     height: fit-content;
   }
     #send{
-      margin: 80px 0 0 20px;
+      padding: 15px;
+      margin: 100px 0 0 20px;
       background-color: teal;
       border: none;
-      border-radius: 0;
+      border-radius: 40px;
     }
     #posts{
+      transform: translateY(-10px);
       padding: 0;
       width: 90%;
     }
