@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family:cursive;
+  font-family:sans-serif;
 }
 
 a {
@@ -16,6 +16,9 @@ header {
 
   background-color: teal;
   padding: 20px;
+}
+header p{
+    margin: 10px 20px;
 }
 #content{
   /* border: 1px solid red; */
